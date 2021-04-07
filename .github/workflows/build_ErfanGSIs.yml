@@ -14,8 +14,8 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://ip1676069303.mobgslb.tbcache.com/Firmware/Flyme/16th/8.20.6.30/cn_beta/20210127184008/70c869b6/update.zip?ali_redirect_domain=firmware.meizu.com&ali_redirect_ex_ftag=6e4bb375cb93832bfa102cffb2582572899584ef24b3c60e&ali_redirect_ex_tmining_ts=1617770421&ali_redirect_ex_tmining_expire=3600&ali_redirect_ex_hot=100
-  ROM_NAME: Generic
+  ROM_URL: https://ip1625737655.mobgslb.tbcache.com/Firmware/Flyme/16th/8.1.5.0/cn/20210127203455/fa5dc229/update.zip?ali_redirect_domain=firmware.meizu.com&ali_redirect_ex_ftag=ae14887737f8b6714128485b41512de05ea3219e52354111&ali_redirect_ex_tmining_ts=1617772059&ali_redirect_ex_tmining_expire=3600&ali_redirect_ex_hot=100
+  ROM_NAME: Flyme
   TZ: Asia/Shanghai
 
 jobs:
@@ -61,7 +61,7 @@ jobs:
        - name: Upload GSI to BitSend
          run: |
               curl -sL https://git.io/file-transfer | sh
-              ./transfer bit final/GSI.zip
+              ./transfer got final/GSI.zip
 
          
             
